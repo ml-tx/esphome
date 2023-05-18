@@ -9,12 +9,14 @@ substitutions:
   devicename: test-4
 
 ethernet:
-  type: LAN8720
-  mdc_pin: GPIO23
-  mdio_pin: GPIO25
-  clk_mode: GPIO0_IN
-  phy_addr: 0
-  power_pin: GPIO25
+  type: W5500
+  clk_pin: GPIO19
+  mosi_pin: GPIO21
+  miso_pin: GPIO23
+  cs_pin: GPIO18
+  interrupt_pin: GPIO36
+  reset_pin: GPIO22
+  clock_speed: 30
   manual_ip:
     static_ip: 192.168.178.56
     gateway: 192.168.178.1
